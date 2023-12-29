@@ -3,6 +3,10 @@ let score = 0;
 let new_hit = 0;
 let clock_sound = document.querySelector('#clock-tik');
 
+setTimeout(function () {
+  clock_sound.play();
+}, 70);
+
 function restart() {
   timer = 60;
   score = 0;
@@ -15,10 +19,6 @@ function restart() {
   update_hit();
   run_timer();
 }
-
-setTimeout(function () {
-  clock_sound.play();
-}, 70);
 
 function update_score() {
   score += 10;
