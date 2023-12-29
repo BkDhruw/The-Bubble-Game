@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bubble Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="pannel">
+      <div id="top">
+        <div class="elem">
+          <h3>Hit</h3>
+          <div id="hit-value" class="box"></div>
+        </div>
+        <div class="elem">
+          <h3>Timer</h3>
+          <div id="timer-value" class="box"></div>
+        </div>
+        <div class="elem">
+          <h3>Score</h3>
+          <div id="score-value" class="box">0</div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div class="bubble">5</div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="update-hit" src="pop-39222.mp3"></audio>
+  <audio id="game-over" src="mixkit-funny-game-over-2878.wav"></audio>
+  <audio id="clock-tik" src="clock-ticking-60-second-countdown-118231.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
